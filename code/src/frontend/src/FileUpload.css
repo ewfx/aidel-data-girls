@@ -1,0 +1,103 @@
+/* FileUpload.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #f9fafb;
+    min-height: 100vh;
+  }
+  
+  .upload-box {
+    width: 300px;
+    padding: 20px;
+    border: 2px dashed #4a90e2;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+  }
+  
+  .upload-box:hover {
+    background-color: #eef5ff;
+    transform: scale(1.05);
+  }
+  
+  .upload-box span {
+    font-size: 16px;
+    color: #4a90e2;
+    font-weight: 600;
+  }
+  
+  .file-name {
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  .upload-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+  }
+  
+  .upload-button:hover {
+    background-color: #357ab7;
+    transform: scale(1.05);
+  }
+  
+  .upload-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .table-container {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .table-container h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .transaction-table th,
+  .transaction-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .transaction-table th {
+    background-color: #4a90e2;
+    color: white;
+  }
+  
+  .transaction-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .transaction-table tr:hover {
+    background-color: #e1ecf4;
+  }
