@@ -32,7 +32,7 @@ def evaluate_risk(data, entities):
   
   client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key="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",
+    api_key="", #Add your api key
   )
   
   prompt = f"""Evaluate the risk of this transaction being suspicious: {risk_scoring_input}
