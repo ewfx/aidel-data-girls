@@ -20,8 +20,8 @@ Risk is at the heart of every financial decision a bank makes. Whether it's appr
 Financial transactions, especially in high-risk areas, need a sharp eye and constant scrutiny to catch fraud, money laundering, and other threats. The problem? Traditional systems rely on fixed rules that can’t keep up with evolving risks. By bringing AI into the mix, we aim to make risk assessment more adaptive, meticulous, and efficient. Instead of just flagging obvious issues, AI digs deeper, identifying hidden patterns and emerging threats—helping us stay ahead of financial crime. Through this project, we're leveraging Gen-AI-based solutions to enhance risk assessment, bringing efficiency and precision to financial risk scoring.
 
 ## 🎥 Demo
-Live Demo uploaded at: https://drive.google.com/file/d/11B9q5RfMrUIEtDXIswX4mLRru7CorpKo/view?usp=sharing  
-Presentation: https://www.canva.com/design/DAGi1nFrm4g/ljtyc6bknxSHlf5TshQk8Q/edit
+[Demo](https://drive.google.com/file/d/11B9q5RfMrUIEtDXIswX4mLRru7CorpKo/view?usp=sharing)  
+[Presentation] (https://www.canva.com/design/DAGi1nFrm4g/ljtyc6bknxSHlf5TshQk8Q/edit)
 
 ## 💡 Inspiration
 "Risk" is what slided us into this project. It's undeniable that financial fraudsters are getting smarter, and rule-based systems just can’t keep up. Traditional methods often drown in the flood of transactions, flagging harmless ones while letting real threats slip through. We wanted a system that doesn’t just tick boxes but thinks—an AI that can identify shady shell companies, spot politically exposed persons (PEPs), and make sense of messy transaction data. Enter Mistral-7B, the AI-powered watchdog that doesn’t just call out risks but explains why. With the ever-tightening grip of regulations and the sheer volume of financial data pouring in, manual review is no longer feasible. Our solution scales effortlessly, reducing false alarms and uncovering hidden patterns. Plus, we wanted something transparent—no more black-box decisions. If an AI says a transaction is risky, we want it to back it up with solid reasoning. That’s the dream: a smarter, faster, and more accountable way to keep financial transactions safe.
@@ -46,7 +46,7 @@ The Key Steps/Highlights of what the model does:
 ## 🛠️ How We Built It
 Technologies:
 Mistral 7B
-We are using an API endpoint provided by OpenRouter to access Mistral-7B LLM model. Using React-based UI, the data is uploaded in .txt format. Data is extracted from the file and the list of Transactions is being sent as a prompt to the 
+ We did the frontend setup using React and in backedn using FAST API. Using React-based UI, the data is uploaded in json format. Data is extracted from the file, and for each transaction, we're prompting the Mistral7B model.e are using an API endpoint provided by OpenRouter to access Mistral-7B LLM model. Capture response from the API and present it in the prescribed output format 
 
 ## 🚧 Challenges We Faced
 - Data Variability: Transaction descriptions vary widely, especially the Unstructured data, requiring strong generalization and model training.
@@ -75,5 +75,7 @@ We are using an API endpoint provided by OpenRouter to access Mistral-7B LLM mod
 - 🔹 Frameworks: OpenAI Router
 
 ## 👥 Team
-- **Your Name** - [GitHub](#) | [LinkedIn](#)
-- **Teammate 2** - [GitHub](#) | [LinkedIn](#)
+- **Mridu Pant** - [GitHub](#) | [LinkedIn](#)
+- **Shruti Bhateja** - [GitHub](#) | [LinkedIn](#)
+- **Harshitha Peteti** - [GitHub](#) | [LinkedIn](#)
+- **Bhavya Malhotra** - [GitHub](#) | [LinkedIn](#)
