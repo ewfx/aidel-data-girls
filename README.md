@@ -57,15 +57,35 @@ Mistral 7B
 ## 🏃 How to Run
 1. Clone the repository  
    ```sh
-   git clone https://github.com/your-repo.git
+   git clone https://github.com/ewfx/aidel-data-girls.git
    ```
-2. Install dependencies  
+2. Install dependencies
+   For frontend: 
    ```sh
-   npm install  # or pip install -r requirements.txt (for Python)
+   npm install  
    ```
-3. Run the project  
+   For backend setup, go to directory:
+    ```sh
+   cd code/src/backend
+   pip install -r requirements.txt (for Python)
+   ```
+3. Run the project
+   To get the server running, command:
    ```sh
-   npm start  # or python app.py
+   uvicorn main:app --reload
+   ```
+   For starting UI application:
+   ```sh
+   npm run start 
+   ```
+4. Localhost:
+   Frontend:
+   ```sh
+   http://localhost:3000/
+   ```
+   Backend:
+   ```sh
+   http://127.0.0.1:8000/ 
    ```
 
 ## 🏗️ Tech Stack
