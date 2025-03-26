@@ -62,8 +62,7 @@ The Key Steps/Highlights of what the model does:
    ```sh
    git clone https://github.com/ewfx/aidel-data-girls.git
    ```
-2. Install dependencies
-   For frontend: 
+2. Install dependencies for frontend: 
    ```sh
    npm install  
    ```
@@ -72,8 +71,7 @@ The Key Steps/Highlights of what the model does:
    cd code/src/backend
    pip install -r requirements.txt (for Python)
    ```
-4. Run the project
-   To get the server running, command:
+4. Run the project - To get the server running, execute:
    ```sh
    uvicorn main:app --reload
    ```
@@ -81,8 +79,7 @@ The Key Steps/Highlights of what the model does:
    ```sh
    npm run start 
    ```
-5. Localhost:
-   Frontend:
+5. Localhost in frontend:
    ```sh
    http://localhost:3000/
    ```
