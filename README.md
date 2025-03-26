@@ -21,7 +21,7 @@ Financial transactions, especially in high-risk areas, need a sharp eye and cons
 
 ## 🎥 Demo
 [Demo](https://drive.google.com/file/d/11B9q5RfMrUIEtDXIswX4mLRru7CorpKo/view?usp=sharing)  
-[Presentation] (https://www.canva.com/design/DAGi1nFrm4g/ljtyc6bknxSHlf5TshQk8Q/edit)
+[Presentation](https://www.canva.com/design/DAGi1nFrm4g/ljtyc6bknxSHlf5TshQk8Q/edit)
 
 ## 💡 Inspiration
 "Risk" is what slided us into this project. It's undeniable that financial fraudsters are getting smarter, and rule-based systems just can’t keep up. Traditional methods often drown in the flood of transactions, flagging harmless ones while letting real threats slip through. We wanted a system that doesn’t just tick boxes but thinks—an AI that can identify shady shell companies, spot politically exposed persons (PEPs), and make sense of messy transaction data. Enter Mistral-7B, the AI-powered watchdog that doesn’t just call out risks but explains why. With the ever-tightening grip of regulations and the sheer volume of financial data pouring in, manual review is no longer feasible. Our solution scales effortlessly, reducing false alarms and uncovering hidden patterns. Plus, we wanted something transparent—no more black-box decisions. If an AI says a transaction is risky, we want it to back it up with solid reasoning. That’s the dream: a smarter, faster, and more accountable way to keep financial transactions safe.
@@ -95,7 +95,8 @@ Mistral 7B
 - 🔹 Frameworks: OpenAI Router
 
 ## 👥 Team
-- **Mridu Pant** - [GitHub](#) | [LinkedIn](#)
-- **Shruti Bhateja** - [GitHub](#) | [LinkedIn](#)
-- **Harshitha Peteti** - [GitHub](#) | [LinkedIn](#)
-- **Bhavya Malhotra** - [GitHub](#) | [LinkedIn](#)
+- **Mridu Pant** - [@mridu-pant](#) 
+- **Shruti Bhateja** - [@ShrutisLegion](#)
+- **Harshitha Peteti** - [@lochgeo](#) 
+- **Bhavya Malhotra** - [@Fighter-007](#) 
+
