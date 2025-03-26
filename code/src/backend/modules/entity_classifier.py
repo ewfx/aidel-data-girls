@@ -6,7 +6,7 @@ def extract_entities(input):
     
     client = OpenAI(
       base_url="https://openrouter.ai/api/v1",
-      api_key="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",
+      api_key="", #Add your own key
     )
     
     prompt = f"""Extract entities from the following transaction and classify them as CORPORATION, SHELL COMPANY, NGO or PERSON:
