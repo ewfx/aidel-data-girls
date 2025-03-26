@@ -44,9 +44,12 @@ The Key Steps/Highlights of what the model does:
 5. Scoring & Justification: Provide a confidence score, risk score, supporting evidence, and a justification for the assigned risk level.
 
 ## 🛠️ How We Built It
-Technologies:
-Mistral 7B
- We did the frontend setup using React and in backedn using FAST API. Using React-based UI, the data is uploaded in json format. Data is extracted from the file, and for each transaction, we're prompting the Mistral7B model.e are using an API endpoint provided by OpenRouter to access Mistral-7B LLM model. Capture response from the API and present it in the prescribed output format 
+- Tech Stack: We’re running a React-based UI on the frontend and FastAPI on the backend.
+- Data Input: Users upload transaction data in JSON format via the UI. We read and parse the file at the backend extracting relevant details from each transaction.
+- Mistral-7B in Action: For every transaction, we send a dynamic prompt to the Mistral-7B LLM model via an API endpoint provided by OpenRouter. The model analyzes the data, identifies entities, and assesses risk levels.
+- Entity Classification: It figures out whether an entity is a Shell Company, NGO, Corporation, or Individual and even flags politically exposed persons (PEPs) separately.
+- Risk Scoring & Justification: The model doesn’t just give a risk score—it explains why a transaction is risky (or not), providing supporting evidence.
+- Results & Display: The structured response is sent back to the frontend, where users can see all the insights in a clean, easy-to-understand format.
 
 ## 🚧 Challenges We Faced
 - Data Variability: Transaction descriptions vary widely, especially the Unstructured data, requiring strong generalization and model training.
