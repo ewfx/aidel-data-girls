@@ -72,7 +72,7 @@ The Key Steps/Highlights of what the model does:
    cd code/src/backend
    pip install -r requirements.txt (for Python)
    ```
-3. Run the project
+4. Run the project
    To get the server running, command:
    ```sh
    uvicorn main:app --reload
@@ -81,7 +81,7 @@ The Key Steps/Highlights of what the model does:
    ```sh
    npm run start 
    ```
-4. Localhost:
+5. Localhost:
    Frontend:
    ```sh
    http://localhost:3000/
