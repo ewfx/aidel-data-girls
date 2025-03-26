@@ -53,19 +53,25 @@ export default function FileUpload() {
                 <th>Extracted Entity</th>
                 <th>Entity Type</th>
                 <th>Risk Score</th>
-                <th>Confidence Score</th>
                 <th>Reason</th>
               </tr>
             </thead>
             <tbody>
-              {transactionData.map((transaction, index) => (
+            {transactionData.map((transaction, index) => (
                 <tr key={index}>
-                  <td>{transaction.transactionId}</td>
-                  <td>{transaction.extractedEntity}</td>
-                  <td>{transaction.entityType}</td>
-                  <td>{transaction.riskScore}</td>
-                  <td>{transaction.confidenceScore}</td>
-                  <td>{transaction.reason}</td>
+                  <td>{transaction.txId}</td>
+                  <td>{
+                    transaction.entity_names && transaction.entity_names.map((names, ind) => (
+                      <tr>{names}</tr>
+                    )) 
+                  }</td>
+                  <td>{
+                    transaction.entity_names && transaction.entity_types.map((names, ind) => (
+                      <tr>{names}</tr>
+                    )) 
+                  }</td>
+                  <td>{transaction.risk_analysis.risk_score}</td>
+                  <td>{transaction.risk_analysis.reason}</td>
                 </tr>
               ))}
             </tbody>
