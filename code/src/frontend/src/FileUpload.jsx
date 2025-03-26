@@ -53,7 +53,6 @@ export default function FileUpload() {
                 <th>Extracted Entity</th>
                 <th>Entity Type</th>
                 <th>Risk Score</th>
-                <th>Confidence Score</th>
                 <th>Reason</th>
               </tr>
             </thead>
