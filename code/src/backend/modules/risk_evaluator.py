@@ -3,6 +3,7 @@ import json
 import ollama
 
 def evaluate_risk(data, entities):
+  print("inside evaluate risk")
   entity_names = []
   entity_types = []
   justification = []
@@ -44,7 +45,7 @@ def evaluate_risk(data, entities):
   """
   response = client.generate(model=model, prompt=prompt)
   try:
-      response_json = json.loads(response)
+      response_json = json.loads(response.response)
   except json.JSONDecodeError as e:
       print(f"Error decoding JSON: {e}")
   return response_json
