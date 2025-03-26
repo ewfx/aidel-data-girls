@@ -1,7 +1,7 @@
 from fastapi import FastAPI, UploadFile, File
-from api.routes import router
 from fastapi.middleware.cors import CORSMiddleware
 from utils.processing_utils import convert_file_to_json
+import json
 
 # Initialize FastAPI app
 app = FastAPI(
@@ -20,9 +20,20 @@ app.add_middleware(
 )
 
 @app.post("/upload")
-def upload_file(file: UploadFile = File(...)):
-    print({"filename": file.filename, "content_type": file.content_type})
-    return {"filename": file.filename, "content_type": file.content_type}
+async def upload_file(file: UploadFile = File(...)):
+    # Read file contents
+    file_contents = await file.read()
+    file_text = file_contents.decode("utf-8")  # Convert bytes to string
+
+    # Parse JSON
+    json_data = json.loads(file_text) 
+    # response_list = []
+    # for tx_dict in tx_list:
+    #     classified_entities = extract_entities(tx_dict)
+    #     risk_measure = evaluate_risk(tx_dict,classified_entities)
+    #     response = build_response(tx_dict,classified_entities,risk_measure)
+    #     response_list.append(response)
+    return {"status": "OK"}
 
 # Root endpoint
 @app.get("/")
