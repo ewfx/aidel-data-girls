@@ -1,6 +1,6 @@
 from services.pep_lookup import searchPEPList
 import json
-import ollama
+from openai import OpenAI
 
 def evaluate_risk(data, entities):
   print("inside evaluate risk")
@@ -29,10 +29,12 @@ def evaluate_risk(data, entities):
   risk_scoring_input["transaction_type"] = data["transactionType"]
   risk_scoring_input["reference"] = data["reference"]
   risk_scoring_input["additional_notes"] = data["additional notes"]
-
   
-  client = ollama.Client()
-  model = "mistral"  # Replace with your model name
+  client = OpenAI(
+    base_url="https://openrouter.ai/api/v1",
+    api_key="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",
+  )
+  
   prompt = f"""Evaluate the risk of this transaction being suspicious: {risk_scoring_input}
   Output format must be of the following pattern-
   {{"risk_score":"","reason":""}}
@@ -43,9 +45,23 @@ def evaluate_risk(data, entities):
   4. Risk score assigned should be out of 100
   5. If PEP are involved, mention in reasoning
   """
-  response = client.generate(model=model, prompt=prompt)
+  completion = client.chat.completions.create(
+    model="mistralai/mistral-small-3.1-24b-instruct:free",
+    messages=[
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": prompt
+          }
+        ]
+      }
+    ]
+  )
+  response = completion.choices[0].message.content
   try:
-      response_json = json.loads(response.response)
+      response_json = json.loads(response)
   except json.JSONDecodeError as e:
       print(f"Error decoding JSON: {e}")
   return response_json
