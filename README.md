@@ -1,4 +1,5 @@
 # 🚀 Project Name
+AI-Driven Entity Intelligence Risk Analysis
 
 ## 📌 Table of Contents
 - [Introduction](#introduction)
@@ -14,23 +15,22 @@
 ---
 
 ## 🎯 Introduction
-A brief overview of your project and its purpose. Mention which problem statement are your attempting to solve. Keep it concise and engaging.
+
 
 ## 🎥 Demo
-🔗 [Live Demo](#) (if applicable)  
-📹 [Video Demo](#) (if applicable)  
-🖼️ Screenshots:
-
-![Screenshot 1](link-to-image)
+Live Demo uploaded at: https://drive.google.com/file/d/11B9q5RfMrUIEtDXIswX4mLRru7CorpKo/view?usp=sharing  
 
 ## 💡 Inspiration
-What inspired you to create this project? Describe the problem you're solving.
+Risk is at the heart of every financial decision a bank makes. Whether it's approving loans, processing transactions, or detecting fraud, managing risk at the end of the day is critical to maintaining trust and stability. Given that how indispensable "risk" is for financial institutions, we picked up the challenge: "AI-Driven Entity Intelligence Risk Analysis"
+
+Financial transactions, especially in high-risk areas, need a sharp eye and constant scrutiny to catch fraud, money laundering, and other threats. The problem? Traditional systems rely on fixed rules that can’t keep up with evolving risks. By bringing AI into the mix, we aim to make risk assessment more adaptive, meticulous, and efficient. Instead of just flagging obvious issues, AI digs deeper, identifying hidden patterns and emerging threats—helping us stay ahead of financial crime. Through this project, we're leveraging Gen-AI-based solutions to enhance risk assessment, bringing efficiency and precision to financial risk scoring.
 
 ## ⚙️ What It Does
 Explain the key features and functionalities of your project.
 
 ## 🛠️ How We Built It
-Briefly outline the technologies, frameworks, and tools used in development.
+Technologies:
+Mistral 7B
 
 ## 🚧 Challenges We Faced
 Describe the major technical or non-technical challenges your team encountered.
